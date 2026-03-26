@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+
+  /* baggrund */
+  background: url("img/baggrund.png") center/cover no-repeat;
+}
+
+/* top */
+.top {
+  padding: 30px;
+}
+
+.logo {
+  width: 500px;
+}
+
+/* sektion */
+section {
+  margin: 10px;
+  padding: 20px;
+  background: rgba(138, 24, 123, 0.4);
+  border-radius: 10px;
+}
+
+.drinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.drink {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.drink img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* knapper */
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #22c55e;
+  color: white;
+}
+
+.price {
+  font-weight: bold;
+  color: #ffeb3b;
+  font-size: 30px;
+}
+
+/* valg */
+span {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+/* valgt */
+.valgt {
+  background: yellow;
+  color: black;
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+  .drinks {
+    grid-template-columns: 1fr 1fr; /* 2 kolonner */
+  }
+
+  .drink img {
+    width: 110%;
+  }
+
+  .drink {
+    padding: 10px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
